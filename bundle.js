@@ -26,7 +26,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n//# sourceURL=webpack://virtual-keyboard/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modules_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/app */ \"./src/modules/app.js\");\n\r\n\r\n\r\nconst app = new _modules_app__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\r\n\r\nwindow.onload = () => {\r\n  app.build();\r\n};\n\n//# sourceURL=webpack://virtual-keyboard/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/app.js":
+/*!****************************!*\
+  !*** ./src/modules/app.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var _createElements_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./createElements.js */ \"./src/modules/createElements.js\");\n\r\n\r\nclass App {\r\n  constructor() {\r\n    this.create = new _createElements_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\r\n  }\r\n\r\n  build() {\r\n    const header = document.body.insertAdjacentElement('afterbegin', this.create.createTag('div', 'header'));\r\n    const containerHeader = header.insertAdjacentElement('afterbegin', this.create.createTag('div', 'container'));\r\n    containerHeader.insertAdjacentElement('afterbegin', this.create.createTag('h1', 'header__title', 'Virtual keyboard'));\r\n    const main = document.body.insertAdjacentElement('beforeend', this.create.createTag('div', 'main'));\r\n    const containerMain = main.insertAdjacentElement('afterbegin', this.create.createTag('div', 'container'));\r\n    const mainWrapper = containerMain.insertAdjacentElement('beforeend', this.create.createTag('div', 'main__wrapper'));\r\n    const textarea = mainWrapper.insertAdjacentElement('afterbegin', this.create.createTag('textarea', 'main__textarea'));\r\n    const keyboard = mainWrapper.insertAdjacentElement('beforeend', this.create.createTag('div', 'main__keyboard'));\r\n  }\r\n}\n\n//# sourceURL=webpack://virtual-keyboard/./src/modules/app.js?");
+
+/***/ }),
+
+/***/ "./src/modules/createElements.js":
+/*!***************************************!*\
+  !*** ./src/modules/createElements.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nclass CreateElements {\r\n  constructor() {\r\n    this.createTag = (nameTag, nameClass, content) => {\r\n      const tag = document.createElement(nameTag);\r\n      tag.className = nameClass;\r\n      if (content) {\r\n        tag.innerHTML = content;\r\n      }\r\n\r\n      return tag;\r\n    }\r\n  }\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CreateElements);\n\n//# sourceURL=webpack://virtual-keyboard/./src/modules/createElements.js?");
 
 /***/ })
 
@@ -57,6 +77,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
