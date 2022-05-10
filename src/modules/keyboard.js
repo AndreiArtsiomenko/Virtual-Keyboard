@@ -1,6 +1,9 @@
 export {
   keyboardRow1,
-  keyboardRow2
+  keyboardRow2,
+  keyboardRow3,
+  keyboardRow4,
+  keyboardRow5
 };
 
 const keyboardRow1 = {
@@ -140,144 +143,399 @@ const keyboardRow1 = {
 };
 
 const keyboardRow2 = {
-  Backquote: {
+  Tab: {
+    name: 'Tab',
+  },
+  KeyQ: {
     EN: {
-      up: '`',
-      down: '~',
+      up: 'Q',
+      down: 'q',
     },
     RU: {
-      up: 'Ё',
-      down: 'ё',
+      up: 'Й',
+      down: 'й',
     },
   },
-  Digit1: {
+  KeyW: {
     EN: {
-      up: '!',
-      down: '1',
+      up: 'W',
+      down: 'w',
     },
     RU: {
-      up: '!',
-      down: '1',
+      up: 'Ц',
+      down: 'ц',
     },
   },
-  Digit2: {
+  KeyE: {
     EN: {
-      up: '@',
-      down: '2',
+      up: 'E',
+      down: 'e',
     },
     RU: {
-      up: '"',
-      down: '2',
+      up: 'У',
+      down: 'у',
     },
   },
-  Digit3: {
+  KeyR: {
     EN: {
-      up: '#',
-      down: '3',
+      up: 'R',
+      down: 'r',
     },
     RU: {
-      up: '№',
-      down: '3',
+      up: 'К',
+      down: 'к',
     },
   },
-  Digit4: {
+  KeyT: {
     EN: {
-      up: '$',
-      down: '4',
+      up: 'T',
+      down: 't',
     },
     RU: {
-      up: ';',
-      down: '4',
+      up: 'Е',
+      down: 'е',
     },
   },
-  Digit5: {
+  KeyY: {
     EN: {
-      up: '%',
-      down: '5',
+      up: 'Y',
+      down: 'y',
     },
     RU: {
-      up: '%',
-      down: '5',
+      up: 'Н',
+      down: 'н',
     },
   },
-  Digit6: {
+  KeyU: {
     EN: {
-      up: '^',
-      down: '6',
+      up: 'U',
+      down: 'u',
     },
     RU: {
+      up: 'Г',
+      down: 'г',
+    },
+  },
+  KeyI: {
+    EN: {
+      up: 'I',
+      down: 'i',
+    },
+    RU: {
+      up: 'Ш',
+      down: 'ш',
+    },
+  },
+  KeyO: {
+    EN: {
+      up: 'O',
+      down: 'o',
+    },
+    RU: {
+      up: 'Щ',
+      down: 'щ',
+    },
+  },
+  KeyP: {
+    EN: {
+      up: 'P',
+      down: 'p',
+    },
+    RU: {
+      up: 'З',
+      down: 'з',
+    },
+  },
+  BracketLeft: {
+    EN: {
+      up: '{',
+      down: '[',
+    },
+    RU: {
+      up: 'Х',
+      down: 'х',
+    },
+  },
+  BracketRight: {
+    EN: {
+      up: '}',
+      down: ']',
+    },
+    RU: {
+      up: 'Ъ',
+      down: 'ъ',
+    },
+  },
+  Backslash: {
+    EN: {
+      up: '|',
+      down: '\\'
+    },
+    RU: {
+      up: '/',
+      down: '\\',
+    },
+  },
+};
+
+const keyboardRow3 = {
+  CapsLock: {
+    name: 'CapsLock',
+  },
+  KeyA: {
+    EN: {
+      up: 'A',
+      down: 'a'
+    },
+    RU: {
+      up: 'Ф',
+      down: 'ф',
+    },
+  },
+  KeyS: {
+    EN: {
+      up: 'S',
+      down: 's'
+    },
+    RU: {
+      up: 'Ы',
+      down: 'ы',
+    },
+  },
+  KeyD: {
+    EN: {
+      up: 'D',
+      down: 'd'
+    },
+    RU: {
+      up: 'В',
+      down: 'в',
+    },
+  },
+  KeyF: {
+    EN: {
+      up: 'F',
+      down: 'f'
+    },
+    RU: {
+      up: 'А',
+      down: 'а',
+    },
+  },
+  KeyG: {
+    EN: {
+      up: 'G',
+      down: 'g'
+    },
+    RU: {
+      up: 'П',
+      down: 'п',
+    },
+  },
+  KeyH: {
+    EN: {
+      up: 'H',
+      down: 'h'
+    },
+    RU: {
+      up: 'Р',
+      down: 'р',
+    },
+  },
+  KeyJ: {
+    EN: {
+      up: 'J',
+      down: 'j'
+    },
+    RU: {
+      up: 'О',
+      down: 'о',
+    },
+  },
+  KeyK: {
+    EN: {
+      up: 'K',
+      down: 'k'
+    },
+    RU: {
+      up: 'Л',
+      down: 'л',
+    },
+  },
+  KeyL: {
+    EN: {
+      up: 'L',
+      down: 'l'
+    },
+    RU: {
+      up: 'Д',
+      down: 'д',
+    },
+  },
+  Semicolon: {
+    EN: {
       up: ':',
-      down: '6',
-    },
-  },
-  Digit7: {
-    EN: {
-      up: '&',
-      down: '7',
+      down: ';'
     },
     RU: {
+      up: 'Ж',
+      down: 'ж',
+    },
+  },
+  Quote: {
+    EN: {
+      up: '"',
+      down: '\''
+    },
+    RU: {
+      up: 'Э',
+      down: 'э',
+    },
+  },
+  Enter: {
+    name: 'Enter',
+  },
+};
+
+const keyboardRow4 = {
+  ShiftLeft: {
+    name: 'ShiftLeft',
+  },
+  KeyZ: {
+    EN: {
+      up: 'Z',
+      down: 'z'
+    },
+    RU: {
+      up: 'Я',
+      down: 'я',
+    },
+  },
+  KeyX: {
+    EN: {
+      up: 'X',
+      down: 'x'
+    },
+    RU: {
+      up: 'Ч',
+      down: 'ч',
+    },
+  },
+  KeyC: {
+    EN: {
+      up: 'C',
+      down: 'c'
+    },
+    RU: {
+      up: 'С',
+      down: 'с',
+    },
+  },
+  KeyV: {
+    EN: {
+      up: 'V',
+      down: 'v'
+    },
+    RU: {
+      up: 'М',
+      down: 'м',
+    },
+  },
+  KeyB: {
+    EN: {
+      up: 'B',
+      down: 'b'
+    },
+    RU: {
+      up: 'И',
+      down: 'и',
+    },
+  },
+  KeyN: {
+    EN: {
+      up: 'N',
+      down: 'n'
+    },
+    RU: {
+      up: 'Т',
+      down: 'т',
+    },
+  },
+  KeyM: {
+    EN: {
+      up: 'M',
+      down: 'm'
+    },
+    RU: {
+      up: 'Ь',
+      down: 'ь',
+    },
+  },
+  Comma: {
+    EN: {
+      up: '<',
+      down: ','
+    },
+    RU: {
+      up: 'Б',
+      down: 'б',
+    },
+  },
+  Period: {
+    EN: {
+      up: '>',
+      down: '.'
+    },
+    RU: {
+      up: 'Ю',
+      down: 'ю',
+    },
+  },
+  Slash: {
+    EN: {
       up: '?',
-      down: '7',
-    },
-  },
-  Digit8: {
-    EN: {
-      up: '*',
-      down: '8',
+      down: '/'
     },
     RU: {
-      up: '*',
-      down: '8',
+      up: ',',
+      down: '.',
     },
   },
-  Digit9: {
-    EN: {
-      up: '(',
-      down: '9',
-    },
-    RU: {
-      up: '(',
-      down: '9',
-    },
+  ShiftRight: {
+    name: 'ShiftRight',
   },
-  Digit0: {
-    EN: {
-      up: ')',
-      down: '0',
-    },
-    RU: {
-      up: ')',
-      down: '0',
-    },
+  ArrowUp: {
+    name: '&and;',
   },
-  Minus: {
-    EN: {
-      up: '_',
-      down: '-',
-    },
-    RU: {
-      up: '_',
-      down: '-',
-    },
+  Delete: {
+    name: 'Del',
   },
-  Equal: {
-    EN: {
-      up: '+',
-      down: '=',
-    },
-    RU: {
-      up: '+',
-      down: '=',
-    },
+
+};
+
+const keyboardRow5 = {
+  ControlLeft: {
+    name: 'Ctrl',
   },
-  Backspace: {
-    EN: {
-      up: '&larr;',
-      down: '&larr;',
-    },
-    RU: {
-      up: '&larr;',
-      down: '&larr;',
-    },
-  }
+  AltLeft: {
+    name: 'Alt',
+  },
+  Space: {
+    name: 'Space',
+  },
+  AltRight: {
+    name: 'Alt',
+  },
+  ControlRight: {
+    name: 'Ctrl',
+  },
+  ArrowLeft: {
+    name: '<',
+  },
+  ArrowDown: {
+    name: '&or;',
+  },
+  ArrowRight: {
+    name: '>',
+  },
 }
