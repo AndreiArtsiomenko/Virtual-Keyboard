@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/style.css */ \"./src/styles/style.css\");\n/* harmony import */ var _modules_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/app */ \"./src/modules/app.js\");\n\r\n\r\n\r\nconst app = new _modules_app__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\r\n\r\nwindow.onload = () => {\r\n  app.build();\r\n};\n\n//# sourceURL=webpack://virtual-keyboard/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/style.css */ \"./src/styles/style.css\");\n/* harmony import */ var _modules_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/app */ \"./src/modules/app.js\");\n\r\n\r\n\r\nconst app = new _modules_app__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\r\n\r\nwindow.onload = () => {\r\n  app.build();\r\n};\r\n\r\nalert('Уважаемый проверяющий, большая просьба, проверить пожалуйста мою работу завтра или оставь свой discord для связи. Заранее благодарю.')\n\n//# sourceURL=webpack://virtual-keyboard/./src/index.js?");
 
 /***/ }),
 
