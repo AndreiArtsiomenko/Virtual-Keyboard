@@ -363,6 +363,10 @@ template {
 /*!************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/style.css ***!
   \************************************************************************/
+button {
+  border: none;
+}
+
 body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
@@ -378,17 +382,100 @@ body {
 }
 
 .header {
-  padding: 30px;
+  padding: 5px;
   text-align: center;
 }
 
 .header__title {
   font-size: 35px;
-  line-height: 130%;
+  line-height: 70%;
   letter-spacing: 0.06em;
 }
 
 .main {
-  padding-top: 100px;
+  display: flex;
+  padding-top: 10px;
   text-align: center;
+}
+
+.main__textarea {
+  width: 820px;
+  height: 110px;
+  border: 6px solid #696969;
+  border-radius: 5px;
+  resize: none;
+  word-break: break-all;
+}
+
+.main__textarea:focus {
+  outline: none;
+}
+
+.main__keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 8px 5px;
+  border-radius: 7px;
+  background-color: #696969;
+}
+
+.keyboard-body__row {
+  display: flex;
+  gap: 5px;
+}
+
+.key {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 7px;
+  color: #ffffff;
+  background-color: #3d3d3d;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.func {
+  background-color: #181818;
+}
+
+.key:hover {
+  background-color: #c23c3c;
+}
+
+.key:active {
+  top: 1px;
+  background-color: #EB4B4B;
+}
+
+.active {
+  top: 1px;
+  background-color: #EB4B4B;
+}
+
+.key__Backspace,
+.key__Tab,
+.key__ShiftRight,
+.key__ShiftLeft,
+.key__Enter,
+.key__CapsLock {
+  width: 105px;
+}
+
+.key__ControlRight,
+.key__ControlLeft {
+  width: 65px;
+}
+
+.key__Space {
+  width: 350px;
+}
+
+.main__text {
+  font-size: 20px;
+  margin: 0px;
 }
