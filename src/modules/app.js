@@ -21,7 +21,7 @@ export default class App {
     const main = document.body.insertAdjacentElement('beforeend', this.create.createTag('div', 'main'));
     const containerMain = main.insertAdjacentElement('afterbegin', this.create.createTag('div', 'container'));
     const mainWrapper = containerMain.insertAdjacentElement('beforeend', this.create.createTag('div', 'main__wrapper'));
-    mainWrapper.insertAdjacentElement('afterbegin', this.create.createTag('textarea', 'main__textarea'));
+    const textarea = mainWrapper.insertAdjacentElement('afterbegin', this.create.createTag('textarea', 'main__textarea'));
     const keyboard = mainWrapper.insertAdjacentElement('beforeend', this.create.createTag('div', 'main__keyboard keyboard-body'));
     containerMain.insertAdjacentElement('beforeend', this.create.createTag('p', 'main__text', 'Клавиатура создана в операционной системе Windows'));
     containerMain.insertAdjacentElement('beforeend', this.create.createTag('p', 'main__text', 'Для переключения языка комбинация: левыe ctrl + alt'));
@@ -31,10 +31,10 @@ export default class App {
       let content;
       if (keyboardRow1[element]['name']) {
         content = keyboardRow1[element]['name'];
-        row1.insertAdjacentElement('beforeend', this.create.createKey('button', 'btn-key func', `${element}`, `${content}`))
+        row1.insertAdjacentElement('beforeend', this.create.createKey('button', `key key__${element} func`, `${element}`, `${content}`))
       } else {
         content = keyboardRow1[element][this.lng][this.register];
-        row1.insertAdjacentElement('beforeend', this.create.createKey('button', 'btn-key', `${element}`, `${content}`))
+        row1.insertAdjacentElement('beforeend', this.create.createKey('button', `key key__${element} letter`, `${element}`, `${content}`))
       }
     });
 
@@ -43,10 +43,10 @@ export default class App {
       let content;
       if (keyboardRow2[element]['name']) {
         content = keyboardRow2[element]['name'];
-        row2.insertAdjacentElement('beforeend', this.create.createKey('button', 'btn-key func', `${element}`, `${content}`))
+        row2.insertAdjacentElement('beforeend', this.create.createKey('button', `key key__${element} func`, `${element}`, `${content}`))
       } else {
         content = keyboardRow2[element][this.lng][this.register];
-        row2.insertAdjacentElement('beforeend', this.create.createKey('button', 'btn-key', `${element}`, `${content}`))
+        row2.insertAdjacentElement('beforeend', this.create.createKey('button', `key key__${element} letter`, `${element}`, `${content}`))
       }
     });
 
@@ -55,10 +55,10 @@ export default class App {
       let content;
       if (keyboardRow3[element]['name']) {
         content = keyboardRow3[element]['name'];
-        row3.insertAdjacentElement('beforeend', this.create.createKey('button', 'btn-key func', `${element}`, `${content}`))
+        row3.insertAdjacentElement('beforeend', this.create.createKey('button', `key key__${element} func`, `${element}`, `${content}`))
       } else {
         content = keyboardRow3[element][this.lng][this.register];
-        row3.insertAdjacentElement('beforeend', this.create.createKey('button', 'btn-key', `${element}`, `${content}`))
+        row3.insertAdjacentElement('beforeend', this.create.createKey('button', `key key__${element} letter`, `${element}`, `${content}`))
       }
     });
 
@@ -67,10 +67,10 @@ export default class App {
       let content;
       if (keyboardRow4[element]['name']) {
         content = keyboardRow4[element]['name'];
-        row4.insertAdjacentElement('beforeend', this.create.createKey('button', 'btn-key func', `${element}`, `${content}`))
+        row4.insertAdjacentElement('beforeend', this.create.createKey('button', `key key__${element} func`, `${element}`, `${content}`))
       } else {
         content = keyboardRow4[element][this.lng][this.register];
-        row4.insertAdjacentElement('beforeend', this.create.createKey('button', 'btn-key', `${element}`, `${content}`))
+        row4.insertAdjacentElement('beforeend', this.create.createKey('button', `key key__${element} letter`, `${element}`, `${content}`))
       }
     });
 
@@ -79,12 +79,11 @@ export default class App {
       let content;
       if (keyboardRow5[element]['name']) {
         content = keyboardRow5[element]['name'];
-        row5.insertAdjacentElement('beforeend', this.create.createKey('button', 'btn-key func', `${element}`, `${content}`))
+        row5.insertAdjacentElement('beforeend', this.create.createKey('button', `key key__${element} func`, `${element}`, `${content}`))
       } else {
         content = keyboardRow5[element][this.lng][this.register];
-        row5.insertAdjacentElement('beforeend', this.create.createKey('button', 'btn-key', `${element}`, `${content}`))
+        row5.insertAdjacentElement('beforeend', this.create.createKey('button', `key key__${element} letter`, `${element}`, `${content}`))
       }
     });
-
   }
 }

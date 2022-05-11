@@ -501,16 +501,12 @@ const keyboardRow4 = {
       down: '.',
     },
   },
-  ShiftRight: {
-    name: 'ShiftRight',
-  },
   ArrowUp: {
     name: '&and;',
   },
-  Delete: {
-    name: 'Del',
+  ShiftRight: {
+    name: 'ShiftRight',
   },
-
 };
 
 const keyboardRow5 = {
@@ -537,5 +533,8 @@ const keyboardRow5 = {
   },
   ArrowRight: {
     name: '>',
+  },
+  Delete: {
+    name: 'Del',
   },
 }
