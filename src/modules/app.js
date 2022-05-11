@@ -85,5 +85,39 @@ export default class App {
         row5.insertAdjacentElement('beforeend', this.create.createKey('button', `key key__${element} letter`, `${element}`, `${content}`))
       }
     });
+
+    let keys = document.querySelectorAll('.key')
+
+    textarea.addEventListener('keydown', (e) => {
+      for (let i = 0; i < keys.length; i++) {
+        if (e.code === keys[i].getAttribute('eventCode') && e.code !== 'CapsLock') {
+          keys[i].classList.add('active')
+        }
+      }
+    })
+
+    textarea.addEventListener('keyup', (e) => {
+      for (let i = 0; i < keys.length; i++)
+        if (e.code === keys[i].getAttribute('eventCode') && e.code !== 'CapsLock') {
+          keys[i].classList.remove('active')
+        }
+    })
+
+    let capsLock = document.querySelector('.key__CapsLock')
+    window.addEventListener('keydown', (e) => {
+      if (e.code === 'CapsLock') {
+        capsLock.classList.toggle('active')
+      }
+    })
+
+    keyboard.addEventListener('click', (e) => {
+      let target = e.target;
+      if (target.getAttribute('eventCode') === 'CapsLock') {
+        capsLock.classList.toggle('active')
+      }
+      if (target.classList.contains('letter')) {
+        textarea.value += target.textContent
+      }
+    })
   }
 }
