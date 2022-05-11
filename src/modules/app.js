@@ -25,7 +25,8 @@ export default class App {
     const keyboard = mainWrapper.insertAdjacentElement('beforeend', this.create.createTag('div', 'main__keyboard keyboard-body'));
     containerMain.insertAdjacentElement('beforeend', this.create.createTag('p', 'main__text', 'Клавиатура создана в операционной системе Windows'));
     containerMain.insertAdjacentElement('beforeend', this.create.createTag('p', 'main__text', 'Для переключения языка комбинация: левыe ctrl + alt'));
-
+    const link = containerMain.insertAdjacentElement('beforeend', this.create.createTag('a', 'main__text', 'Pull requests'));
+    link.setAttribute('href', 'https://github.com/AndreiArtsiomenko/Virtual-Keyboard/pull/1')
     const row1 = keyboard.insertAdjacentElement('afterbegin', this.create.createTag('div', 'keyboard-body__row'));
     Object.keys(keyboardRow1).forEach((element) => {
       let content;
